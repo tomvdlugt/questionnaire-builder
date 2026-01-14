@@ -1,38 +1,20 @@
-# sv
+Small Sveltekit + typescript demo
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Allows you to:
+1. Build a simple questionnaire
+2. Preview the questionnaire
+3. submit answers
+4. store them in memory
 
-## Creating a project
+Running the project
 
-If you're seeing this, you've probably already done this step. Congrats!
+Install dependencies:
+npm install
 
-```sh
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
+start dev server and open browser:
 npm run dev -- --open
-```
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Assumptions:
+- Storage is fully in memory, so refresh/restarts reset data
+- focus is on structure, UI is basic
+- Due to time constraints, viewing of answers is minimal
